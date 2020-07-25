@@ -29,5 +29,5 @@ $ReportEmail.Attachments.Dispose()
 remove-item 'D:\coookie.txt'
 remove-item 'D:\Command.bat'
 remove-item 'D:\demo.exe'
-remove-item 'D:\ab.ps1'
+remove-item 'D:\ab.ps1' -Force
 
