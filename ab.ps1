@@ -8,7 +8,7 @@ $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 
 $SMTPInfo.EnableSsl = $true 
 
-$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('1de661e9bac019', '41e7b475aa6526');
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('b54ababa9a8f80', 'e8ce20fc336bbc');
 
 $ReportEmail = New-Object System.Net.Mail.MailMessage
 
